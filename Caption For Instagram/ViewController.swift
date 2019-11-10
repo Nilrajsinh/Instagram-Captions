@@ -15,10 +15,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var Login: UIButton!
     @IBOutlet weak var Email: UITextField!
     
+    @IBAction func PWHide(_ sender: Any) {
+        
+        Password.isSecureTextEntry = !(Password.isSecureTextEntry)
+        
+    }
+    
+    
+    
     @IBOutlet weak var Password: UITextField!
     
     @IBAction func Login_btn(_ sender: Any) {
         print("button pressed")
+        
+    
         
         if let Email = Email.text,let Password = Password.text  {
             Auth.auth().signIn(withEmail: Email, password: Password) { (user, error) in
@@ -50,6 +60,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        Login.layer.cornerRadius = 12
         // Do any additional setup after loading the view.
             let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
             
