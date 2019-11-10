@@ -7,14 +7,60 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var Login: UIButton!
+    @IBOutlet weak var Email: UITextField!
+    
+    @IBOutlet weak var Password: UITextField!
+    
+    @IBAction func Login_btn(_ sender: Any) {
+        print("button pressed")
+        
+        if let Email = Email.text,let Password = Password.text  {
+            Auth.auth().signIn(withEmail: Email, password: Password) { (user, error) in
+                if let u = user {
+                    
+                    self.performSegue(withIdentifier: "Home", sender: self)
+                    
+                }
+                else {
+                    let alert = UIAlertController(title: "Invalid Details", message: "Email or Password did not match", preferredStyle: .alert)
+                    
+                    
+                    let alertOkAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                    
+                    alert.addAction(alertOkAction)
+                    
+                    self.present(alert, animated: true, completion: nil)
+                
+                
+            }
+        }
+        
+       
     }
+    
 
 
 }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+            
+            view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+
+}
+
 
