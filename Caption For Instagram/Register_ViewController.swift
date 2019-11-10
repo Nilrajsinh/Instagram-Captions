@@ -9,8 +9,14 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import GoogleMobileAds
 
-class Register_ViewController: UIViewController {
+
+class Register_ViewController: UIViewController, GADBannerViewDelegate {
+    
+    var bannerView: GADBannerView!
+    
+    
     @IBOutlet weak var Register: UIButton!
     @IBOutlet weak var Email_R: UITextField!
     
@@ -68,10 +74,37 @@ class Register_ViewController: UIViewController {
         
         view.addGestureRecognizer(tap)
         
-    
+    bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+
+    addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-8978960658795160/8611688233"
+         bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
 
         // Do any additional setup after loading the view.
     }
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+     bannerView.translatesAutoresizingMaskIntoConstraints = false
+     view.addSubview(bannerView)
+     view.addConstraints(
+       [NSLayoutConstraint(item: bannerView,
+                           attribute: .bottom,
+                           relatedBy: .equal,
+                           toItem: bottomLayoutGuide,
+                           attribute: .top,
+                           multiplier: 1,
+                           constant: 0),
+        NSLayoutConstraint(item: bannerView,
+                           attribute: .centerX,
+                           relatedBy: .equal,
+                           toItem: view,
+                           attribute: .centerX,
+                           multiplier: 1,
+                           constant: 0)
+       ])
+    }
+    
     @objc func dismissKeyboard() {
            view.endEditing(true)
        }
