@@ -48,6 +48,14 @@ class NewCapTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    //MARK:- Here is the code to copy caption by click
+    
+        let cell = tableView.cellForRow(at: indexPath)
+        UIPasteboard.general.string = cell?.textLabel?.text
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
