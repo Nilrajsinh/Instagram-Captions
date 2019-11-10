@@ -11,6 +11,10 @@
 		A7BB7A27FF8FEA46A14342C0 /* Pods_Caption_For_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C1955E31E1A6B25E69B778 /* Pods_Caption_For_InstagramTests.framework */; };
 		DE541B5E7CE9DD53575CC7D0 /* Pods_Caption_For_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41DE98FE1BAE9FDFA8B9FCF /* Pods_Caption_For_Instagram.framework */; };
 		F00579152377FAC9004D1B91 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00579142377FAC9004D1B91 /* HomeViewController.swift */; };
+		F005791823780F1E004D1B91 /* NewCapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005791723780F1E004D1B91 /* NewCapTableViewController.swift */; };
+		F005791A23780F2D004D1B91 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005791923780F2D004D1B91 /* PopularTableViewController.swift */; };
+		F005791C23780F3E004D1B91 /* ForGirlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005791B23780F3E004D1B91 /* ForGirlTableViewController.swift */; };
+		F005791E23780F4C004D1B91 /* ForBoyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005791D23780F4C004D1B91 /* ForBoyTableViewController.swift */; };
 		F099CB022377051F005043FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099CB012377051F005043FF /* AppDelegate.swift */; };
 		F099CB042377051F005043FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099CB032377051F005043FF /* SceneDelegate.swift */; };
 		F099CB062377051F005043FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099CB052377051F005043FF /* ViewController.swift */; };
@@ -51,6 +55,10 @@
 		C10638DF088628D7201D28AB /* Pods-Caption For Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caption For Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Caption For Instagram/Pods-Caption For Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		C5A5009826FCF5867C630FFD /* Pods-Caption For InstagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caption For InstagramTests.release.xcconfig"; path = "Target Support Files/Pods-Caption For InstagramTests/Pods-Caption For InstagramTests.release.xcconfig"; sourceTree = "<group>"; };
 		F00579142377FAC9004D1B91 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F005791723780F1E004D1B91 /* NewCapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCapTableViewController.swift; sourceTree = "<group>"; };
+		F005791923780F2D004D1B91 /* PopularTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
+		F005791B23780F3E004D1B91 /* ForGirlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForGirlTableViewController.swift; sourceTree = "<group>"; };
+		F005791D23780F4C004D1B91 /* ForBoyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForBoyTableViewController.swift; sourceTree = "<group>"; };
 		F099CAFE2377051F005043FF /* Caption For Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caption For Instagram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F099CB012377051F005043FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F099CB032377051F005043FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +128,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F005791623780DEB004D1B91 /* Caption */ = {
+			isa = PBXGroup;
+			children = (
+				F005791723780F1E004D1B91 /* NewCapTableViewController.swift */,
+				F005791923780F2D004D1B91 /* PopularTableViewController.swift */,
+				F005791B23780F3E004D1B91 /* ForGirlTableViewController.swift */,
+				F005791D23780F4C004D1B91 /* ForBoyTableViewController.swift */,
+			);
+			path = Caption;
+			sourceTree = "<group>";
+		};
 		F099CAF52377051F005043FF = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +164,7 @@
 		F099CB002377051F005043FF /* Caption For Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				F005791623780DEB004D1B91 /* Caption */,
 				F099CB012377051F005043FF /* AppDelegate.swift */,
 				F099CB032377051F005043FF /* SceneDelegate.swift */,
 				F099CB052377051F005043FF /* ViewController.swift */,
@@ -418,9 +438,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F00579152377FAC9004D1B91 /* HomeViewController.swift in Sources */,
+				F005791E23780F4C004D1B91 /* ForBoyTableViewController.swift in Sources */,
+				F005791823780F1E004D1B91 /* NewCapTableViewController.swift in Sources */,
 				F099CB062377051F005043FF /* ViewController.swift in Sources */,
 				F099CB022377051F005043FF /* AppDelegate.swift in Sources */,
+				F005791A23780F2D004D1B91 /* PopularTableViewController.swift in Sources */,
 				F099CB042377051F005043FF /* SceneDelegate.swift in Sources */,
+				F005791C23780F3E004D1B91 /* ForGirlTableViewController.swift in Sources */,
 				F099CB3423771D8F005043FF /* Register_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

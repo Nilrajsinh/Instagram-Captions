@@ -62,6 +62,7 @@ class Register_ViewController: UIViewController {
         super.viewDidLoad()
         
         Register.layer.cornerRadius = 12
+        Register.layer.borderWidth = 2.0;
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         

@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         
         if let Email = Email.text,let Password = Password.text  {
             Auth.auth().signIn(withEmail: Email, password: Password) { (user, error) in
-                if let u = user {
+                if user != nil {
                     
                     self.performSegue(withIdentifier: "Home", sender: self)
                     
@@ -63,6 +63,9 @@ class ViewController: UIViewController {
         
         
         Login.layer.cornerRadius = 12
+        Login.layer.borderWidth = 2.0;
+        //Login.layer.borderColor = [UIColor blackcolor].CGColor;
+        
         // Do any additional setup after loading the view.
             let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
             
