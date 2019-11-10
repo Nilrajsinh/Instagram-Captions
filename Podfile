@@ -11,6 +11,7 @@ target 'Caption For Instagram' do
 pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
+pod 'Google-Mobile-Ads-SDK'
 
 
 # add pods for any other desired Firebase products
