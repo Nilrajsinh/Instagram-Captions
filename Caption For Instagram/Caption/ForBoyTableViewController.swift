@@ -10,9 +10,36 @@ import UIKit
 
 class ForBoyTableViewController: UITableViewController {
     
-    var ForBoy = [ "Caption 10",
-                   "Caption 11",
-                   "Caption 12"
+    var ForBoy = [ "Be a warrior in a room of worriers.",
+                   "Women were created for a reason, to keep men sane.",
+                   "I never let my Loyalty become Slavery.",
+                   "Men are not against you; they are merely for themselves.",
+                   "Girl, I have to call you back.",
+                   "Being an adult is like folding a fitted sheet. No one really knows how.",
+                   "Men are like wine – some turn to vinegar, but the best improve with age",
+                   "Your intelligence is my common sense.",
+                   "We met for a reason. You’re either a blessing or a lesson.",
+                   "Nothing can stop me, I’m all the way up.",
+                   "Never mistake my kindness for weakness.",
+                   "Love your haters – they’re your biggest fans",
+                   "I’m sorry if I offended you with my common sense.",
+                   "You couldn’t handle me even if I came with instructions.",
+                   "Ignore me, I don’t care I’m used to it anyway, I’m invisible.",
+                   "Bitch, please you’ve you more issues than vogue.",
+                   "Treat Me Like a Joke and I Will Leave You Like It’s Funny.",
+                   "I go on and on. Can’t understand how I last so long.",
+                   "Don’t stand to close to the heater, babe. Plastic melts.",
+                   "I’m everything you want but can’t have.",
+                   "Every man’s ego says; “Macho Law prohibits me from admitting I’m wrong.",
+                   "It is not an attitude. It is the way I am.",
+                   "Only a real man is able to stick to just one woman and treat her special, always.",
+                   "Let men see, let them know, a real man, who lives as he was meant to live.",
+                   "Here’s to staying positive and testing negative.",
+                   "I don’t care if you don’t like me, I wasn’t put on earth to entertain you.",
+                   "I’ll never try to fit in. I was born to STAND OUT.",
+                   "Boys got swagger, men have style, but gentlemen have class.",
+                   "I don’t race, I don’t chase that’s why I can’t be replaced."
+                   
     ]
 
     override func viewDidLoad() {
