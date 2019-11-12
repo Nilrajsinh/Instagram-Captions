@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,48 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2019-11-12 at 10.26.11 PM" translatesAutoresizingMaskIntoConstraints="NO" id="05c-oJ-EU7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cyphers LogoBLUE copy" translatesAutoresizingMaskIntoConstraints="NO" id="jSZ-fb-cJ5">
+                                <rect key="frame" x="-4" y="706" width="384" height="106"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="05c-oJ-EU7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1VY-ZY-Mif"/>
+                            <constraint firstItem="05c-oJ-EU7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="246-Ff-0NO">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-44"/>
+                            </constraint>
+                            <constraint firstItem="05c-oJ-EU7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5Dc-ZJ-njC"/>
+                            <constraint firstItem="jSZ-fb-cJ5" firstAttribute="leading" secondItem="05c-oJ-EU7" secondAttribute="leading" id="Da4-tj-v7s">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-4"/>
+                            </constraint>
+                            <constraint firstItem="jSZ-fb-cJ5" firstAttribute="trailing" secondItem="05c-oJ-EU7" secondAttribute="trailing" id="QOq-JO-jZJ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="jSZ-fb-cJ5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="724" id="SPO-2o-KnW">
+                                <variation key="heightClass=regular-widthClass=compact" constant="662"/>
+                            </constraint>
+                            <constraint firstItem="05c-oJ-EU7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q6h-hI-eSa"/>
+                            <constraint firstItem="jSZ-fb-cJ5" firstAttribute="bottom" secondItem="05c-oJ-EU7" secondAttribute="bottom" id="vLl-JZ-5iL">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="48.799999999999997" y="373.15270935960592"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cyphers LogoBLUE copy" width="84" height="84"/>
+        <image name="Screenshot 2019-11-12 at 10.26.11 PM" width="438" height="384"/>
+    </resources>
 </document>

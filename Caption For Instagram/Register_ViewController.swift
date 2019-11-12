@@ -59,9 +59,6 @@ class Register_ViewController: UIViewController, GADBannerViewDelegate {
 
         }
         
-    
-        
-       
         
     }
     override func viewDidLoad() {
