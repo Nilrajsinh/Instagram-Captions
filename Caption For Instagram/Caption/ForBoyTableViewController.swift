@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class ForBoyTableViewController: UITableViewController {
+class ForBoyTableViewController: UITableViewController,GADInterstitialDelegate {
+    
+    var interstitial: GADInterstitial!
     
     var ForBoy = [ "Be a warrior in a room of worriers.",
                    "Women were created for a reason, to keep men sane.",
@@ -44,12 +47,30 @@ class ForBoyTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2409241963")
+        let request = GADRequest()
+        interstitial.load(request)
+        interstitial = createAndLoadInterstitial()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    func createAndLoadInterstitial() -> GADInterstitial {
+      var interstitial = GADInterstitial(adUnitID: "ca-app-pub-8978960658795160/2409241963")
+      interstitial.delegate = self
+      interstitial.load(GADRequest())
+      return interstitial
+    }
+
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+      interstitial = createAndLoadInterstitial()
     }
 
     // MARK: - Table view data source
@@ -80,6 +101,11 @@ class ForBoyTableViewController: UITableViewController {
        
            let cell = tableView.cellForRow(at: indexPath)
            UIPasteboard.general.string = cell?.textLabel?.text
+        
+        if interstitial.isReady {
+          interstitial.present(fromRootViewController: self)
+        }
+        
        }
     
 
