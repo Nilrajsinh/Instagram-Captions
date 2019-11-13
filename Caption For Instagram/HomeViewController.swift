@@ -58,12 +58,25 @@ class HomeViewController:UIViewController, GADBannerViewDelegate, GADInterstitia
         
     }
     
+    @IBAction func Hindi(_ sender: Any) {
+        
+        if interstitial.isReady {
+                   interstitial.present(fromRootViewController: self)
+               }
+        
+        let LoginPage = self.storyboard?.instantiateViewController(withIdentifier: "Hindi")
+        self.navigationController?.pushViewController(LoginPage!, animated: true)
+        
+        
+    }
+    
     
     
     @IBOutlet weak var newCC: UIButton!
     @IBOutlet weak var Popcc: UIButton!
     @IBOutlet weak var Girlcc: UIButton!
     @IBOutlet weak var Boycc: UIButton!
+    @IBOutlet weak var Hindicc: UIButton!
     
     
    
@@ -87,6 +100,9 @@ class HomeViewController:UIViewController, GADBannerViewDelegate, GADInterstitia
         
         Boycc.layer.cornerRadius = 12
         Boycc.layer.borderWidth = 2.0;
+        
+        Hindicc.layer.cornerRadius = 12
+        Hindicc.layer.borderWidth = 2.0;
     
         
         // Do any additional setup after loading the view.

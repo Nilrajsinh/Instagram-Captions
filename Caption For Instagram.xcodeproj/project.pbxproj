@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		F099CB2423770523005043FF /* Caption_For_InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099CB2323770523005043FF /* Caption_For_InstagramUITests.swift */; };
 		F099CB3223770782005043FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F099CB3123770782005043FF /* GoogleService-Info.plist */; };
 		F099CB3423771D8F005043FF /* Register_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F099CB3323771D8F005043FF /* Register_ViewController.swift */; };
+		F0E5054D237C00E0006C64C7 /* HindiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E5054C237C00E0006C64C7 /* HindiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		F099CB2523770523005043FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F099CB3123770782005043FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F099CB3323771D8F005043FF /* Register_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register_ViewController.swift; sourceTree = "<group>"; };
+		F0E5054C237C00E0006C64C7 /* HindiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HindiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				F005791923780F2D004D1B91 /* PopularTableViewController.swift */,
 				F005791B23780F3E004D1B91 /* ForGirlTableViewController.swift */,
 				F005791D23780F4C004D1B91 /* ForBoyTableViewController.swift */,
+				F0E5054C237C00E0006C64C7 /* HindiTableViewController.swift */,
 			);
 			path = Caption;
 			sourceTree = "<group>";
@@ -282,7 +285,7 @@
 				};
 			};
 			buildConfigurationList = F099CAF92377051F005043FF /* Build configuration list for PBXProject "Caption For Instagram" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -437,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E5054D237C00E0006C64C7 /* HindiTableViewController.swift in Sources */,
 				F00579152377FAC9004D1B91 /* HomeViewController.swift in Sources */,
 				F005791E23780F4C004D1B91 /* ForBoyTableViewController.swift in Sources */,
 				F005791823780F1E004D1B91 /* NewCapTableViewController.swift in Sources */,
